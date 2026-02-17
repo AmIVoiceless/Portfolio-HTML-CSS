@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container_counter">
+        <h1 class="title_counter">Игра: счётчик</h1>
+        <h2 class="subtitle_counter">Нажимай кнопку</h2>
+        <button class="button_counter" id="incrementButton">Клик</button>
+        <h2 class="display_counter">Счёт: <span id="counterValue">0</span></h2>
+        <button class="button_counter" id="resetButton">Сбросить</button>
+    </div>
+    <div class="container_adventure">
+        <h1 class="title_adventure">Генератор приключений</h1>
+        <h2 class="subtitle_adventure">Cгенерировать приключение</h2>
+        <button class="button_adventure" id="generateAdventureButton">Сгенерировать</button>
+        <h2 class="display_adventure" id="adventureText"></h2>
+        <button class="button_adventure" id="clearAdventureButton">Очистить</button>
+        <h3 class="saved_adventures_title">Сохранённые приключения:</h3>
+        <div id="adventureList"></div>
+    </div>
+    <div class="container_guess">
+        <h1 class="title_guess">Угадай число</h1>
+        <h2 class="subtitle_guess">Загадано число от 1 до 100</h2>
+        <input type="number" id="guessInput" placeholder="Введите число" min="1" max="100">
+        <button class="button_guess" id="submitGuessButton">Проверить</button>
+        <h2 class="feedback_guess" id="guessFeedback"></h2>
+        <button class="button_guess" id="restartGuessButton">Заново</button>
+    </div>
+</div>
+</body>
+</html>

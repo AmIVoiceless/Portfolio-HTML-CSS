@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая 3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container_reaction">
+        <h1 class="title_reaction">Игра на реакцию</h1>
+        <h2 class="subtitle_reaction">Быстро нажимайте кнопку</h2>
+        <div id="reactionArea">
+            <button id="reactionButton" class="button_reaction"></button>
+        </div>
+        <h2 class="reaction_feedback" id="reactionFeedback"></h2>
+        <h3>Время: <span id="reactionTimer">30</span> сек</h3>
+        <button class="button_reaction" id="reactionRestartButton">Сбросить</button>
+    </div>
+    <div class="container_tictactoe">
+    <h1>Крестики-нолики</h1>
+    <div id="board" class="board">
+        <button class="cell"></button>
+        <button class="cell"></button>
+        <button class="cell"></button>
+        <button class="cell"></button>
+        <button class="cell"></button>
+        <button class="cell"></button>
+        <button class="cell"></button>
+        <button class="cell"></button>
+        <button class="cell"></button>
+    </div>
+    <h2 id="gameStatus"></h2>
+    <button id="restartGame">Перезапуск</button>
+</div>
+</body>
+</html>

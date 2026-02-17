@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая 4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/storage.js" defer></script>
+    <script src="js/character.js" defer></script>
+    <script src="js/tasks.js" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Планировщик задач</h1>
+</header>
+<section class="character-card">
+    <h2 id="characterName"></h2>
+    <p>Уровень: <span id="level"></span></p>
+    <div class="xp-bar">
+        <div id="xpProgress"></div>
+    </div>
+    <p><span id="currentXP"></span> / <span id="neededXP"></span> XP</p>
+</section>
+<section class="task-form">
+    <h2>Новая задача</h2>
+    <input type="text" id="taskTitle" placeholder="Название задачи">
+    <textarea id="taskDescription" placeholder="Описание"></textarea>
+    <select id="taskDifficulty">
+        <option value="10">Легкая (+10 XP)</option>
+        <option value="25">Средняя (+25 XP)</option>
+        <option value="50">Сложная (+50 XP)</option>
+        <option value="100">Эпическая (+100 XP)</option>
+    </select>
+    <button id="addTask">Добавить задачу</button>
+</section>
+<section class="tasks">
+    <h2>Активные задачи</h2>
+    <div id="taskList"></div>
+</section>
+<section class="completed">
+    <h2>Выполненные задачи</h2>
+    <div id="completedList"></div>
+</section>
+<section class="stats">
+    <h2>Статистика</h2>
+    <p>Выполнено задач: <span id="totalCompleted"></span></p>
+    <p>Общий XP: <span id="totalXP"></span></p>
+    <p>Создан персонаж: <span id="createdDate"></span></p>
+    <button id="resetProgress">Сбросить прогресс</button>
+</section>
+</body>
+</html>
